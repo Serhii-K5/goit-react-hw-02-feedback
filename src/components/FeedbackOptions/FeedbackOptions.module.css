@@ -1,0 +1,37 @@
+
+.feedbackBtn {
+  display: inline-flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+
+  background-color: #FFF;
+  border: 1px solid #111;
+  color: #111;
+  
+  font-size: 16px;
+  font-weight: bold;  
+  text-align: center;
+  text-decoration: none;
+  transition: all 350ms;
+  cursor: pointer;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.feedbackBtn:focus {
+  color: #222;
+}
+
+.feedbackBtn:hover,
+.feedbackBtn:active {
+  border-color: blue;
+  color: blue;
+}
+
+.feedbackBtn:nth-of-type(even) {
+  margin: 0 5vw;
+}
