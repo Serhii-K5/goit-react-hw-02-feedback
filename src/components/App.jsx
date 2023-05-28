@@ -3,9 +3,8 @@ import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
-// import img1 from './img/notepad-spring.jpg';
 import {FeedbackImg} from './FeedbackImg/FeedbackImg';
-
+import css from './styles/styles.module.css';
 
 
 export class App extends Component {
@@ -36,30 +35,9 @@ export class App extends Component {
 
   render() {
     return (
-      <div
-        style={{
-          display: 'flex',          
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          alignContent: 'center',
-          justifyContent: 'center',
-          height: '100vh',
-          width: '750px',
-          margin: '0 auto', 
-          textAlign: 'center',
-          fontSize: 40,
-          color: '#010101',
-          // flexDirection: 'column',
-        }}
-      >
+      <div className={css.container}>
         <FeedbackImg />
-        <div
-          style={{
-            padding: '20px',
-            boxShadow: '2px 4px 6px',
-            width: '100%',
-          }}
-        >
+        <div className={css.containerFeedbackStyles}>
           <Section title="Please leave feedback">
             <FeedbackOptions
               options={['Good', 'Neutral', 'Bad']}
