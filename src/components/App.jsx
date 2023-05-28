@@ -45,15 +45,16 @@ export class App extends Component {
             />
           </Section>
 
-            <Section
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-              }}
-              title="Statistics"> {
-            this.countTotalFeedback() === 0 ? 
+          <Section
+            // className='statisticsSection'
+            // style={{
+            //   display: 'flex',
+            //   justifyContent: 'center',
+            // }}
+            title="Statistics"> {
+              this.countTotalFeedback() === 0 ? 
               <Notification message="There is no feedback"></Notification>
-            : <Statistics
+              : <Statistics
                 good={this.state.good}
                 neutral={this.state.neutral}
                 bad={this.state.bad}
